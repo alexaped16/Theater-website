@@ -47,14 +47,18 @@ a{
     }
 
 .main-photo{
-    z-index: 1;
+    height: 95vh;
+    width: 95vw;
+    position: relative;
+
 }
 
 .featured-shows{
-    z-index: 2;
-    font-size: xx-large;
-    color: red;
-    place-items: center;
+    position: absolute;
+    color:red;
+    top: 350vh;
+    left: 48vh;
+    z-index: 1;
 }
 
 .side1{ 
@@ -65,11 +69,13 @@ a{
     grid-area: side2;
     }
 
+.april{
+    color: gray;
+}
+
 .content{ 
-    display: flex;
     display: column;
     grid-area: content;
-    justify-content: space-between;
     align-items: center;
     }
 
@@ -103,4 +109,9 @@ button{
     grid-area: footer;
     background-color: black;
     
+}
+
+.map{
+    height: 1px;
+    width: 1px;
 }
